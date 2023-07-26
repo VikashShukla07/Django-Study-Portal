@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Chat with the Bot</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="message" required>
+        <input type="submit" value="Send">
+    </form>
+    <div>
+        {% if response %}
+            <p>User: {{ request.POST.message }}</p>
+            <p>Bot: {{ response }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+

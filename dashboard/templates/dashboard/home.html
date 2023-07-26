@@ -1,0 +1,92 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="{% url 'notes' %}">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Notebook</div>
+          <div class="card-body">
+            <h5 class="card-title">Make Your Notes</h5>
+            <p class="card-text">This will help you to prioritize and finish important task first and without getting confused or distracted.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'homework' %}">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Homework</div>
+          <div class="card-body">
+            <h5 class="card-title">Write down your Homework</h5>
+            <p class="card-text">This will help you to prioritize and finish homework first and without getting confused.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% url 'youtube' %}">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Youtube</div>
+          <div class="card-body">
+            <h5 class="card-title">Search for Resources on Youtube</h5>
+            <p class="card-text">This will help you to to get top 10 youtube videos on any topic you search.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="#">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Notebook</div>
+          <div class="card-body">
+            <h5 class="card-title">Make Your Notes</h5>
+            <p class="card-text">This will help you to prioritize and finish important task first and without getting confused or distracted.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <a href="#">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Book</div>
+          <div class="card-body">
+            <h5 class="card-title">Search Books for refrence</h5>
+            <p class="card-text">This will help you to prioritize and finish important task first and without getting confused or distracted.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="#">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Wikipedia</div>
+          <div class="card-body">
+            <h5 class="card-title">Search it on wikipedia</h5>
+            <p class="card-text">This will help you to prioritize and finish important task first and without getting confused or distracted.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+   
+  </div>
+
+
+</section>
+{% endblock content %}
